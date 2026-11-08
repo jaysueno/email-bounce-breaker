@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# The identity scan's term list must never ship, even if it is copied in by mistake.
+identity-terms.txt

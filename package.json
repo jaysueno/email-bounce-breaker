@@ -1,0 +1,24 @@
+{
+  "name": "email-bounce-breaker",
+  "version": "1.0.0",
+  "description": "Two small libraries that pause a send when hard bounces climb: a Resend bounce classifier and a two-tier circuit breaker.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jay Sueno",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaysueno/email-bounce-breaker.git"
+  },
+  "keywords": ["email", "bounce", "circuit-breaker", "resend", "deliverability"],
+  "exports": {
+    "./email-breaker": "./lib/email-breaker.js",
+    "./resend-bounce": "./lib/resend-bounce.js"
+  },
+  "files": ["lib"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
