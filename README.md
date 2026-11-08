@@ -8,6 +8,8 @@ sends and stops at 5% after 250, where unknown counts as hard and transient neve
 
 ## What it does
 
+![Chart of sends in the window against hard bounce rate: warn from 100 sends at 2%, stop from 250 sends at 5%, so 2 of 100 lands in warn and 13 of 250 in stop.](docs/img/two-tiers.svg)
+
 Two ES modules with zero dependencies, for anyone who sends bulk email.
 
 - `lib/resend-bounce.js` reads a Resend `email.bounced` webhook payload into one flat verdict:
@@ -73,6 +75,8 @@ Resend's documented `email.bounced` example (checked against resend.com/docs on 
 Every value in it is invented.
 
 ## How it works
+
+![Flow from the Resend email.bounced webhook through readBounce, which reads data.bounce.type: a hard bounce is suppressed and counted, an unknown one is counted, a transient one never counts, and the old flat read of data.bounce_type is crossed out as empty for four months.](docs/img/webhook-flow.svg)
 
 ```
   Resend webhook (email.bounced)            send loop, one drain window

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<title id="title">How a bounce webhook is read</title>
+<desc id="desc">The Resend email.bounced webhook goes through readBounce, which reads data.bounce.type: a hard bounce is suppressed and counted, an unknown one is counted, a transient one never counts, and the old flat read of data.bounce_type is crossed out as empty for four months.</desc>
+<rect x="0.5" y="0.5" width="1199" height="469" fill="#001B3B" stroke="#EDE7DC" stroke-width="1"/>
+<text x="40" y="56" font-family="Georgia, 'Playfair Display', serif" font-size="30" fill="#F2EDE2">Read the field the provider actually sends.</text>
+<text x="40" y="86" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#D8D3CA">The webhook and the send loop classify through one reader, so the two cannot drift apart.</text>
+<rect x="40" y="190" width="230" height="100" rx="4" fill="none" stroke="#EDE7DC" stroke-width="1"/>
+<text x="155" y="232" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#F2EDE2">Resend webhook</text>
+<text x="155" y="260" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#D8D3CA">email.bounced</text>
+<line x1="270" y1="240" x2="307" y2="240" stroke="#EDE7DC" stroke-width="2"/>
+<polygon points="319,240 307,246 307,234" fill="#EDE7DC"/>
+<rect x="320" y="190" width="280" height="100" rx="4" fill="none" stroke="#EDE7DC" stroke-width="2"/>
+<text x="460" y="232" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#F2EDE2">readBounce(data)</text>
+<text x="460" y="260" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#D8D3CA">reads data.bounce.type</text>
+<line x1="600" y1="240" x2="670.9" y2="162.8" stroke="#EDE7DC" stroke-width="2"/>
+<polygon points="679,154 675.3,166.9 666.5,158.8" fill="#EDE7DC"/>
+<rect x="680" y="116" width="480" height="76" rx="4" fill="#8C5348"/>
+<text x="704" y="148" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#F2EDE2">permanent: hard</text>
+<text x="704" y="176" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#F2EDE2">suppressed, and counts toward the breaker</text>
+<line x1="600" y1="240" x2="667" y2="240" stroke="#EDE7DC" stroke-width="2"/>
+<polygon points="679,240 667,246 667,234" fill="#EDE7DC"/>
+<rect x="680" y="202" width="480" height="76" rx="4" fill="#59591D"/>
+<text x="704" y="234" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#F2EDE2">no type: unknown</text>
+<text x="704" y="262" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#F2EDE2">counts toward the breaker, not suppressed</text>
+<line x1="600" y1="240" x2="670.9" y2="317.2" stroke="#EDE7DC" stroke-width="2"/>
+<polygon points="679,326 666.5,321.2 675.3,313.1" fill="#EDE7DC"/>
+<rect x="680" y="288" width="480" height="76" rx="4" fill="none" stroke="#EDE7DC" stroke-width="1"/>
+<text x="704" y="320" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#F2EDE2">transient: full mailbox, greylisting</text>
+<text x="704" y="348" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#D8D3CA">never counts, never suppressed</text>
+<line x1="155" y1="290" x2="155" y2="400" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="6 5"/>
+<line x1="155" y1="400" x2="309" y2="400" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="6 5"/>
+<polygon points="319,400 309,405 309,395" fill="#D8D3CA"/>
+<text x="460" y="360" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">the old flat read</text>
+<rect x="320" y="370" width="280" height="60" rx="4" fill="none" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="6 5"/>
+<text x="460" y="407" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" text-anchor="middle" fill="#D8D3CA">data.bounce_type</text>
+<line x1="355" y1="401" x2="565" y2="401" stroke="#8C5348" stroke-width="3"/>
+<text x="620" y="407" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#F2EDE2">empty for four months</text>
+</svg>

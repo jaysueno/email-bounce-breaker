@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="505" viewBox="0 0 1200 505" role="img" aria-labelledby="title desc">
+<title id="title">Two tiers: warn at 2% after 100 sends, stop at 5% after 250</title>
+<desc id="desc">Sends in the window from 0 to 400 against hard bounce rate from 0 to 8%, with a warn zone from 100 sends at 2%, a stop zone from 250 sends at 5%, and two examples: 2 of 100 warns and 13 of 250 stops.</desc>
+<rect x="0.5" y="0.5" width="1199" height="504" fill="#001B3B" stroke="#EDE7DC" stroke-width="1"/>
+<text x="40" y="56" font-family="Georgia, 'Playfair Display', serif" font-size="30" fill="#F2EDE2">Warn at 2% after 100 sends. Stop at 5% after 250.</text>
+<text x="40" y="86" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#D8D3CA">Hard or unknown bounces as a share of sends in the window. Both boundaries are inclusive.</text>
+<text x="120" y="118" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" fill="#D8D3CA">hard bounce rate</text>
+<line x1="120" y1="355" x2="1100" y2="355" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="3 6"/>
+<line x1="120" y1="280" x2="1100" y2="280" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="3 6"/>
+<line x1="120" y1="205" x2="1100" y2="205" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="3 6"/>
+<line x1="120" y1="130" x2="1100" y2="130" stroke="#D8D3CA" stroke-width="1" stroke-dasharray="3 6"/>
+<rect x="365" y="130" width="735" height="225" fill="#59591D"/>
+<rect x="732.5" y="130" width="367.5" height="112.5" fill="#8C5348"/>
+<line x1="120" y1="430" x2="1100" y2="430" stroke="#EDE7DC" stroke-width="1"/>
+<line x1="120" y1="130" x2="120" y2="430" stroke="#EDE7DC" stroke-width="1"/>
+<line x1="114" y1="430" x2="120" y2="430" stroke="#EDE7DC" stroke-width="1"/>
+<text x="108" y="436" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="end" fill="#D8D3CA">0%</text>
+<line x1="114" y1="355" x2="120" y2="355" stroke="#EDE7DC" stroke-width="1"/>
+<text x="108" y="361" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="end" fill="#D8D3CA">2%</text>
+<line x1="114" y1="280" x2="120" y2="280" stroke="#EDE7DC" stroke-width="1"/>
+<text x="108" y="286" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="end" fill="#D8D3CA">4%</text>
+<line x1="114" y1="205" x2="120" y2="205" stroke="#EDE7DC" stroke-width="1"/>
+<text x="108" y="211" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="end" fill="#D8D3CA">6%</text>
+<line x1="114" y1="130" x2="120" y2="130" stroke="#EDE7DC" stroke-width="1"/>
+<text x="108" y="136" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="end" fill="#D8D3CA">8%</text>
+<line x1="120" y1="430" x2="120" y2="436" stroke="#EDE7DC" stroke-width="1"/>
+<text x="120" y="456" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">0</text>
+<line x1="365" y1="430" x2="365" y2="436" stroke="#EDE7DC" stroke-width="1"/>
+<text x="365" y="456" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">100</text>
+<line x1="610" y1="430" x2="610" y2="436" stroke="#EDE7DC" stroke-width="1"/>
+<text x="610" y="456" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">200</text>
+<line x1="855" y1="430" x2="855" y2="436" stroke="#EDE7DC" stroke-width="1"/>
+<text x="855" y="456" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">300</text>
+<line x1="1100" y1="430" x2="1100" y2="436" stroke="#EDE7DC" stroke-width="1"/>
+<text x="1100" y="456" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" text-anchor="middle" fill="#D8D3CA">400</text>
+<text x="610" y="486" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#D8D3CA">sends in the window</text>
+<text x="140" y="240" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F2EDE2">NONE</text>
+<text x="140" y="264" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#D8D3CA">under 100 sends</text>
+<text x="880" y="392" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F2EDE2">NONE</text>
+<text x="880" y="416" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#D8D3CA">under 2%</text>
+<text x="385" y="170" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#F2EDE2">WARN</text>
+<text x="385" y="196" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" fill="#F2EDE2">keep sending</text>
+<text x="1084" y="166" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="end" fill="#F2EDE2">STOP</text>
+<text x="1084" y="192" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="18" text-anchor="end" fill="#F2EDE2">pause the campaign</text>
+<circle cx="365" cy="355" r="9" fill="#F2EDE2" stroke="#001B3B" stroke-width="2"/>
+<text x="383" y="390" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#F2EDE2">2 of 100 = 2%, warn</text>
+<text x="383" y="414" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" fill="#D8D3CA">on the boundary, so it counts</text>
+<circle cx="732.5" cy="235" r="9" fill="#F2EDE2" stroke="#001B3B" stroke-width="2"/>
+<text x="752.5" y="228" font-family="-apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="700" fill="#F2EDE2">13 of 250 = 5.2%, stop</text>
+</svg>
